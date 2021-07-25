@@ -8,14 +8,14 @@ import java.io.File;
 import java.io.IOException;
 
 public class PageScreenshot extends TestBase {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException{
         FirefoxLaunch();
         OpenTestURL("https://demo.opencart.com/");
         generateScreenshot();
         FirefoxClose();
 
     }
-    public static void generateScreenshot() throws IOException {
+    public static void generateScreenshot() throws IOException{
         //Take Screenshot
         File srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         //Save Image
