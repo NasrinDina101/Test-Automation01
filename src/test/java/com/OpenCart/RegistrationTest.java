@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class RegistrationTest extends TestBase {
-    public static void main(String[] args) {
+    public static void main(String[] args){
         FirefoxLaunch();
         Invalid_Registration();
         //FirefoxClose();
